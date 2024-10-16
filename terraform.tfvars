@@ -11,7 +11,7 @@ region = "uk-london-1"
 compartment_ocid = "ocid1.tenancy.oc1..aaaaaaaay54k6twlomunmgr7g3uyk3wjsq2kainrtdxebcjqzvbxvqediuwa"
 
 # OCI User and Authtoken
-oci_username       = "chaitanyasharma/chaitanyasharma" 
+oci_username       = "chaitanyasharma/chaitanyasharma04uk@gmail.com" 
 # For a federated user (single sign-on with an identity provider), enter the username in the following format: TenancyName/Federation/UserName. 
 # For example, if you use OCI's identity provider, your login would be, Acme/oracleidentitycloudservice/alice.jones@acme.com. 
 #If you are using OCI's direct sign-in, enter the username in the following format: TenancyName/YourUserName. For example, Acme/alice_jones. Your password is the auth token you created previously.

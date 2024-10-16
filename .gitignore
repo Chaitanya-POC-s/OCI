@@ -1,3 +1,4 @@
+
 # General
 .DS_Store
 .AppleDouble
@@ -31,3 +32,4 @@ Temporary Items
 .crt
 .csr
 .pem
+.terraform/*

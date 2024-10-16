@@ -99,11 +99,11 @@ variable "k8s_version" {
   description = "Kubernetes version installed on your master and worker nodes"
 }
 variable "num_pool_workers" {
-  default     = 3
+  default     = 1
   description = "The number of worker nodes in the node pool. If select Cluster Autoscaler, will assume the minimum number of nodes configured"
 }
 variable "node_pool_shape" {
-  default     = "VM.Standard.E4.Flex"
+  default     = "VM.Standard.E3.Flex"
   description = "A shape is a template that determines the number of OCPUs, amount of memory, and other resources allocated to a newly created instance for the Worker Node"
 }
 variable "node_pool_node_shape_config_ocpus" {
@@ -111,11 +111,11 @@ variable "node_pool_node_shape_config_ocpus" {
   description = "You can customize the number of OCPUs to a flexible shape"
 }
 variable "node_pool_node_shape_config_memory_in_gbs" {
-  default     = "16" # Only used if flex shape is selected
+  default     = "1" # Only used if flex shape is selected
   description = "You can customize the amount of memory allocated to a flexible shape"
 }
 variable "node_pool_boot_volume_size_in_gbs" {
-  default     = "60"
+  default     = "50"
   description = "Specify a custom boot volume size (in GB)"
 }
 variable "image_operating_system" {
@@ -123,7 +123,7 @@ variable "image_operating_system" {
   description = "The OS/image installed on all nodes in the node pool."
 }
 variable "image_operating_system_version" {
-  default     = "7.9"
+  default     = "8"
   description = "The OS/image version installed on all nodes in the node pool."
 }
 variable "generate_public_ssh_key" {
